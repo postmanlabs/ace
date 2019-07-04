@@ -1,8 +1,14 @@
 {
-    "name": "ace-api",
-    "version": "0.1.0",
-    "dependencies": {
-        "panino" : ">=2.2.0",
-        "asset-smasher": "0.2.0"
-    }
+  "name": "ace-api",
+  "version": "0.1.0",
+  "dependencies": {
+    "panino": ">=2.2.0",
+    "asset-smasher": "0.2.0",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
